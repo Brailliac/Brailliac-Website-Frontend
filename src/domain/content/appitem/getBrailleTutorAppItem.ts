@@ -35,6 +35,7 @@ const item: AppItem = {
     name: 'Brailliac: Braille Tutor',
     description: 'Everything you need to learn Braille!',
     accentColor: 'logo1',
+    // TODO: Use SVG
     logoSrc: 'logo_braille_tutor.webp',
     detailPages: [detailPage1, detailPage2, detailPage3, detailPage4, detailPage5],
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lukeneedham.brailletutor',

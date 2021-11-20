@@ -29,6 +29,7 @@ const item: AppItem = {
     name: 'Brailliac: Braille Keyboard',
     description: 'Practise Braille while typing!',
     accentColor: 'logo3',
+    // TODO: Use SVG
     logoSrc: 'logo_braille_keyboard.webp',
     detailPages: [detailPage1, detailPage2, detailPage3, detailPage4],
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lukeneedham.braillekeyboard',
