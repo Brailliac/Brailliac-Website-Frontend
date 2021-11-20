@@ -27,10 +27,10 @@ function indexPage(): JSX.Element {
 
     return (
         <Flex direction={'column'}>
-            <Center paddingX={12} marginTop={12}>
+            <Center paddingX={{base: 5, md: 8, lg: 12}} marginTop={12}>
                 <HeroGraphic />
             </Center>
-            <Text textAlign={'center'} marginTop={16} textStyle={'content'}>
+            <Text textAlign={'center'} marginTop={{base: 14, md: 16}} textStyle={'content'}>
                 Scroll to see how...
             </Text>
             <Center marginTop={-2} opacity={0.4}>
@@ -38,7 +38,7 @@ function indexPage(): JSX.Element {
                     <ChevronIcon />
                 </Box>
             </Center>
-            <VStack spacing={20} paddingX={14} marginTop={24}>
+            <VStack spacing={20} paddingX={{base: 4, md: 8, lg: 14}} marginTop={24}>
                 {appSpotlights}
             </VStack>
             <Box h={20} />

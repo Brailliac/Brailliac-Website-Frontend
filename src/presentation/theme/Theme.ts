@@ -15,26 +15,26 @@ const textStyles = {
     h1: {
         fontFamily: 'Roboto',
         fontWeight: 500,
-        fontSize: '64px',
-        lineHeight: '72px',
+        fontSize: {base: '40px', md: '56px', lg: '64px'},
+        lineHeight: {base: '48px', md: '64px', lg: '72px'},
     },
     h2: {
         fontFamily: 'Roboto',
         fontWeight: 500,
-        fontSize: '40px',
-        lineHeight: '48px',
+        fontSize: {base: '26px', md: '30px', lg: '40px'},
+        lineHeight: {base: '30px', md: '38px', lg: '48px'},
     },
     h3: {
         fontFamily: 'Roboto',
         fontWeight: 500,
-        fontSize: '32px',
-        lineHeight: '40px',
+        fontSize: {base: '22px', md: '24px', lg: '32px'},
+        lineHeight: {base: '26px', md: '32px', lg: '40px'},
     },
     content: {
         fontFamily: 'Roboto',
         fontWeight: 300,
-        fontSize: '24px',
-        lineHeight: '32px',
+        fontSize: {base: '18px', sm: '20px', md: '22px', lg: '28px'},
+        lineHeight: {base: '22px', sm: '24px', md: '26px', lg: '34px'},
     },
 }
 

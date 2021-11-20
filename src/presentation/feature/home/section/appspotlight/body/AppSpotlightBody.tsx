@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Box, Center, Flex} from "@chakra-ui/react";
+import {Box, Center, Flex, useBreakpointValue} from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {AppItemDetailPage} from "../../../../../../domain/model/AppItemDetailPage";
 import {AppSpotlightDetailPage} from "./AppSpotlightDetailPage";
@@ -19,14 +19,18 @@ function appSpotlightBody(props: Props): JSX.Element {
     const [currentPageIndex, setCurrentPageIndex] = useState<number>(0)
     const [swiper, setSwiper] = useState<SwiperClass>()
 
+    const isBelowMd = useBreakpointValue({base: true, md: false}) ?? false
+    const slidesPerView = isBelowMd ? 1.2 : 1.5
+
     const pageSlides = detailPages.map(it => (
-        <SwiperSlide key={it.title}>
+        // `height: auto` will make each slide the same height
+        <SwiperSlide key={it.title} style={{height: 'auto'}} >
             {/*
                 Add padding to separate pages.
                 We don't use Swiper.spaceBetween,
                 as that breaks the draggable region.
             */}
-            <Box paddingX={8}>
+            <Box paddingX={{base: 2, md: 8}} h={'full'}>
                 <AppSpotlightDetailPage page={it} accentColor={accentColor} />
             </Box>
         </SwiperSlide>
@@ -46,11 +50,16 @@ function appSpotlightBody(props: Props): JSX.Element {
     }
 
     return (
-        <Flex bgColor={'appSpotlightBody'} paddingTop={8} paddingBottom={5} direction={'column'}>
+        <Flex
+            bgColor={'appSpotlightBody'}
+            paddingTop={{base: 5, md: 8}}
+            paddingBottom={{base: 3, md: 5}}
+            direction={'column'}
+        >
             <Box>
                 <Swiper
                     onSwiper={onSwiperReady}
-                    slidesPerView={1.5}
+                    slidesPerView={slidesPerView}
                     centeredSlides={true}
                     grabCursor={true}
                     onSlideChange={onSlideChange}
@@ -58,7 +67,7 @@ function appSpotlightBody(props: Props): JSX.Element {
                     {pageSlides}
                 </Swiper>
             </Box>
-            <Center marginTop={3}>
+            <Center marginTop={{base: 2, md: 3}}>
                 <PagerIndicator
                     numPages={pageSlides.length}
                     currentPageIndex={currentPageIndex}

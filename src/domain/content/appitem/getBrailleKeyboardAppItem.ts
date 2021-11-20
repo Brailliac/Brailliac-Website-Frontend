@@ -14,13 +14,13 @@ const detailPage2: AppItemDetailPage = {
 }
 
 const detailPage3: AppItemDetailPage = {
-    title: 'Practise at any time',
+    title: 'At any time',
     description: 'No matter what you’re typing, do it while practising Braille',
     imageSrc: 'detail_page_braille_keyboard_3.png',
 }
 
 const detailPage4: AppItemDetailPage = {
-    title: 'Customisable',
+    title: 'Customise',
     description: 'Pick the perfect keyboard size to fit your screen',
     imageSrc: 'detail_page_braille_keyboard_4.png',
 }

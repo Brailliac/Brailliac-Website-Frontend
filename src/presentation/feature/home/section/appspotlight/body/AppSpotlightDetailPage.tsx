@@ -15,24 +15,37 @@ function appSpotlightDetailPage(props: Props): JSX.Element {
     const title = page.title
     const imageAlt = `Screenshot of the ${title} feature in the app`
 
-    const imageHeight = '320px'
+    const imageHeight = {base: '264px', sm: '280px', md: '296px', lg: '320px'}
 
     const elevation = '2px'
     const containerShadow = `0px ${elevation} ${elevation} rgba(0, 0, 0, 0.25)`
 
     return (
         // Padding to avoid clipping shadow
-        <Box padding={elevation}>
-            <Flex direction={'row'} bgColor={'white'} borderRadius={'15px'} boxShadow={containerShadow}>
-                <Flex direction={'column'} marginTop={4} marginStart={5}>
+        <Box padding={elevation} h={'full'} >
+            <Flex
+                // For screens smaller than 'sm', the image shows below the text
+                direction={{base: 'column', sm: 'row'}}
+                bgColor={'white'}
+                borderRadius={'15px'}
+                boxShadow={containerShadow}
+                h={'full'}
+            >
+                <Flex
+                    direction={'column'}
+                    marginTop={{base: 3, md: 4}}
+                    paddingStart={5}
+                    paddingEnd={{base: 5, sm: 1}}
+                >
                     <Text textStyle={'h3'} textColor={accentColor}>{title}</Text>
-                    <Text textStyle={'content'} marginTop={4} textColor={'darkText'}>{page.description}</Text>
+                    <Text textStyle={'content'} marginTop={{base: 1, md: 4}} textColor={'darkText'}>{page.description}</Text>
                 </Flex>
-                <Spacer minW={5} />
+                <Spacer />
                 <Image
                     h={imageHeight}
-                    marginEnd={4}
-                    marginTop={6}
+                    objectFit={'contain'}
+                    marginX={{base: 2, md: 4}}
+                    marginTop={{base: 2, md: 6}}
                     src={page.imageSrc}
                     alt={imageAlt}
                 />
