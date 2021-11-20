@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.7.2",
