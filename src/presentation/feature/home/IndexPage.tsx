@@ -38,10 +38,20 @@ function indexPage(): JSX.Element {
                     <ChevronIcon />
                 </Box>
             </Center>
-            <VStack spacing={20} paddingX={{base: 4, md: 8, lg: 14}} marginTop={24}>
+            <VStack spacing={{base: 10, md: 20}} paddingX={{base: 4, md: 8, lg: 14}} marginTop={24}>
                 {appSpotlights}
             </VStack>
             <Box h={20} />
+            <Flex direction={'column'} paddingX={{base: 3, md: 10}}>
+                <Text textStyle={'content'} textAlign={'center'}>
+                    Brailliac was created by Luke Needham,
+                    to make learning Braille more accessible and enjoyable.
+                </Text>
+                <Text textStyle={'content'} textAlign={'center'} marginTop={3}>
+                    If you enjoy my work, you can support me via <u><a href={'https://paypal.me/brailliac'} target="_blank">paypal.me/brailliac</a></u>
+                </Text>
+            </Flex>
+            <Box h={16} />
         </Flex>
     )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import {Image} from "@chakra-ui/image";
-import {chakra, Center, Flex, Text, Box} from "@chakra-ui/react";
+import {chakra, Center, Flex, Text} from "@chakra-ui/react";
 
 export const HeroGraphic = React.memo(heroGraphic)
 
