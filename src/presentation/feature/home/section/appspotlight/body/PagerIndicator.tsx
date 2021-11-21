@@ -25,13 +25,12 @@ function pagerIndicator(props: Props): JSX.Element {
         }
 
         return (
-            <Box {...clickable} padding={1}>
+            <Box {...clickable} padding={1} key={i}>
                 <Circle
                     w={indicatorSize}
                     h={indicatorSize}
                     bgColor={color}
                     opacity={opacity}
-                    key={i}
                 />
             </Box>
         )
