@@ -11,7 +11,7 @@ function heroGraphic(): JSX.Element {
         <Flex direction={'column'} w={'full'}>
             <Center>
                 {/* TODO: Use svg image here */}
-                <Image src={'logo_braille_tutor.webp'} alt={'Braille Tutor Logo'} w={logoSize} h={logoSize} />
+                <Image src={'image/logo_braille_tutor.webp'} alt={'Braille Tutor Logo'} w={logoSize} h={logoSize} />
             </Center>
             <Center marginTop={10}>
                 <Text textStyle={'h1'} textAlign={'center'}>
