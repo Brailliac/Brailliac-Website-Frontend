@@ -1,0 +1,20 @@
+{
+  "detailPage1": {
+    "title": "Braille-Eingabe",
+    "description": "Braille-Zellen direkt in ein beliebiges Textfeld eingeben, in jeder App"
+  },
+  "detailPage2": {
+    "title": "Automatisch übersetzen",
+    "description": "Oder Symbole während der Eingabe automatisch übersetzen"
+  },
+  "detailPage3": {
+    "title": "Jederzeit",
+    "description": "Egal was Sie tippen, tun Sie es, während Sie Braille üben"
+  },
+  "detailPage4": {
+    "title": "Anpassen",
+    "description": "Wählen Sie die perfekte Tastaturgröße für Ihren Bildschirm"
+  },
+  "name": "Brailliac: Braille-Tastatur",
+  "description": "Braille beim Tippen üben!"
+}

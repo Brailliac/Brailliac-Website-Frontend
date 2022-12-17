@@ -1,0 +1,20 @@
+{
+  "detailPage1": {
+    "title": "Entrée Braille",
+    "description": "Tapez des cellules braille directement dans n'importe quel champ de texte, dans n'importe quelle application"
+  },
+  "détailPage2": {
+    "title": "Traduire automatiquement",
+    "description": "Ou, traduisez automatiquement les symboles au fur et à mesure que vous tapez"
+  },
+  "détailPage3": {
+    "title": "A tout moment",
+    "description": "Peu importe ce que vous tapez, faites-le tout en pratiquant le braille"
+  },
+  "detailPage4": {
+    "title": "Personnaliser",
+    "description": "Choisissez la taille de clavier parfaite pour s'adapter à votre écran"
+  },
+  "name": "Brailliac: clavier braille",
+  "description": "Entraînez-vous en braille en tapant!"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Brailliac: Braille-Lehrer",
+  "description": "Alles was Sie brauchen, um Braille zu lernen!",
+  "detailPage1": {
+    "title": "Wörterbuch",
+    "description": "Symbole schnell und einfach nachschlagen, über verschiedene Braille-Codes hinweg"
+  },
+  "detailPage2": {
+    "title": "Praxis",
+    "description": "Wählen Sie genau aus, was gebohrt werden soll, oder lassen Sie die App Ihre Schwachstellen herausfinden."
+  },
+  "detailPage3": {
+    "title": "Herausforderung",
+    "description": "Beim Übersetzen gegen die Uhr antreten"
+  },
+  "detailPage4": {
+    "title": "Übersetzung",
+    "description": "Echte Sätze in und aus Braille übersetzen"
+  },
+  "detailPage5": {
+    "title": "Aufsteigen",
+    "description": "Sammeln Sie Punkte, während Sie lernen, neue Funktionen und Themen freizuschalten"
+  }
+}

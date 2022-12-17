@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Center, Flex, Text, VStack} from '@chakra-ui/react';
+import {Box, Center, Flex, Select, Text, VStack} from '@chakra-ui/react';
 import {HeroGraphic} from './section/herographic/HeroGraphic';
 import {AppSpotlight} from './section/appspotlight/AppSpotlight';
 import {AppItem} from '../../../domain/model/AppItem';
@@ -7,6 +7,7 @@ import {getAppItems} from '../../../domain/content/appitem/getAppItems';
 import {openInNewTab} from '../../util/openInNewTab';
 import {ChevronIcon} from '../../common/icon/ChevronIcon';
 import useTranslation from 'next-translate/useTranslation';
+import {LanguageSelector} from '../language/languageSelector';
 
 export const IndexPage = React.memo(CreateIndexPage);
 
@@ -29,7 +30,10 @@ function CreateIndexPage(): JSX.Element {
 
   return (
     <Flex direction={'column'}>
-      <Center paddingX={{base: 5, md: 8, lg: 12}} marginTop={12}>
+      <Flex w={'full'} align={'end'} direction={'column'} px={'4'} py={'2'}>
+        <LanguageSelector />
+      </Flex>
+      <Center paddingX={{base: 5, md: 8, lg: 12}} marginTop={'6'}>
         <HeroGraphic />
       </Center>
       <Text
