@@ -1,0 +1,20 @@
+{
+  "detailPage1": {
+    "title": "Braille-invoer",
+    "description": "Typ braillecellen rechtstreeks in elk tekstveld, in elke app"
+  },
+  "detailPage2": {
+    "title": "Automatisch vertalen",
+    "description": "Of vertaal symbolen automatisch terwijl u typt"
+  },
+  "detailPage3": {
+    "title": "Op elk moment",
+    "description": "Wat je ook typt, doe het terwijl je braille oefent"
+  },
+  "detailPage4": {
+    "title": "Aanpassen",
+    "description": "Kies de perfecte toetsenbordgrootte die op uw scherm past"
+  },
+  "name": "Brailliac: Braille Keyboard",
+  "description": "Oefen braille terwijl u typt!"
+}

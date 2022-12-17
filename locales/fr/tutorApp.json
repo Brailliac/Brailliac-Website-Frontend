@@ -1,0 +1,24 @@
+{
+  "name": "Brailliac: Tuteur Braille",
+  "description": "Tout ce dont vous avez besoin pour apprendre le braille !",
+  "detailPage1": {
+    "title": "Dictionnaire",
+    "description": "Recherchez des symboles rapidement et facilement, parmi différents codes braille"
+  },
+  "détailPage2": {
+    "title": "Pratiquer",
+    "description": "Choisissez exactement quoi forer ou laissez l'application déterminer vos points faibles"
+  },
+  "détailPage3": {
+    "title": "Défi",
+    "description": "Concourir dans les traductions contre la montre"
+  },
+  "detailPage4": {
+    "title": "Traduction",
+    "description": "Traduire de vraies phrases vers et depuis le braille"
+  },
+  "detailPage5": {
+    "title": "Niveau supérieur",
+    "description": "Gagnez des points tout en apprenant à débloquer de nouvelles fonctionnalités et de nouveaux thèmes"
+  }
+}

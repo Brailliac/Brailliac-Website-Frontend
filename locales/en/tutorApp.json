@@ -1,0 +1,24 @@
+{
+  "name": "Brailliac: Braille Tutor",
+  "description": "Everything you need to learn Braille!",
+  "detailPage1": {
+    "title": "Dictionary",
+    "description": "Look up symbols quickly and easily, across various Braille codes"
+  },
+  "detailPage2": {
+    "title": "Practise",
+    "description": "Pick exactly what to drill, or let the app figure out your weak-points"
+  },
+  "detailPage3": {
+    "title": "Challenge",
+    "description": "Compete in translations against the clock"
+  },
+  "detailPage4": {
+    "title": "Translation",
+    "description": "Translate real sentences both to and from Braille"
+  },
+  "detailPage5": {
+    "title": "Level Up",
+    "description": "Earn points while learning to unlock new features and themes"
+  }
+}
