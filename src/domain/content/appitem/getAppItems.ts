@@ -1,8 +1,7 @@
-import {getBrailleTutorAppItem} from "./getBrailleTutorAppItem";
-import {getBrailleKeyboardAppItem} from "./getBrailleKeyboardAppItem";
+import {getBrailleTutorAppItem} from './getBrailleTutorAppItem';
+import {getBrailleKeyboardAppItem} from './getBrailleKeyboardAppItem';
+import {Translate} from 'next-translate';
 
-const allItems = [getBrailleTutorAppItem(), getBrailleKeyboardAppItem()]
-
-export function getAppItems() {
-    return allItems
+export function getAppItems(t: Translate) {
+  return [getBrailleTutorAppItem(t), getBrailleKeyboardAppItem(t)];
 }

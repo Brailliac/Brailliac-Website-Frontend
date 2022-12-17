@@ -1,0 +1,20 @@
+{
+  "detailPage1": {
+    "title": "Braille Input",
+    "description": "Type Braille cells directly into any text field, in any app"
+  },
+  "detailPage2": {
+    "title": "Auto-translate",
+    "description": "Or, automatically translate symbols as you type"
+  },
+  "detailPage3": {
+    "title": "At any time",
+    "description": "No matter what you’re typing, do it while practising Braille"
+  },
+  "detailPage4": {
+    "title": "Customise",
+    "description": "Pick the perfect keyboard size to fit your screen"
+  },
+  "name": "Brailliac: Braille Keyboard",
+  "description": "Practise Braille while typing!"
+}

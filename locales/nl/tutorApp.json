@@ -1,0 +1,24 @@
+{
+  "name": "Brailliac: Braille Tutor",
+  "description": "Alles wat je nodig hebt om braille te leren!",
+  "detailPage1": {
+    "title": "Woordenboek",
+    "description": "Snel en eenvoudig symbolen opzoeken in verschillende braillecodes"
+  },
+  "detailPage2": {
+    "title": "Oefenen",
+    "description": "Kies precies wat u wilt boren, of laat de app uw zwakke punten uitzoeken"
+  },
+  "detailPage3": {
+    "title": "Uitdaging",
+    "description": "Concurreren in vertalingen tegen de klok"
+  },
+  "detailPage4": {
+    "title": "Vertaling",
+    "description": "Vertaal echte zinnen zowel van als naar braille"
+  },
+  "detailPage5": {
+    "title": "Niveau omhoog",
+    "description": "Verdien punten terwijl je leert om nieuwe functies en thema's te ontgrendelen"
+  }
+}
