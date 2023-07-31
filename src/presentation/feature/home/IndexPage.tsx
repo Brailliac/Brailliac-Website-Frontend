@@ -4,8 +4,9 @@ import {HeroGraphic} from "./section/herographic/HeroGraphic";
 import {AppSpotlight} from "./section/appspotlight/AppSpotlight";
 import {AppItem} from "../../../domain/model/AppItem";
 import {getAppItems} from "../../../domain/content/appitem/getAppItems";
-import {openInNewTab} from "../../util/openInNewTab";
+import {openInNewTab} from "../../util/Window";
 import {ChevronIcon} from "../../common/icon/ChevronIcon";
+import {Clickable} from "../../common/Clickable";
 
 export const IndexPage = React.memo(indexPage)
 
@@ -23,6 +24,11 @@ function indexPage(): JSX.Element {
     function onDownloadClick(app: AppItem) {
         const link = app.playStoreUrl
         openInNewTab(link)
+    }
+
+    function openPersonalWebsite() {
+        const url = 'https://lukeneedham.com'
+        openInNewTab(url)
     }
 
     return (
@@ -47,8 +53,12 @@ function indexPage(): JSX.Element {
                     Brailliac was created by Luke Needham,
                     to make learning Braille more accessible and enjoyable.
                 </Text>
-                <Text textStyle={'content'} textAlign={'center'} marginTop={3}>
-                    If you enjoy my work, you can support me via <u><a href={'https://paypal.me/brailliac'} target="_blank">paypal.me/brailliac</a></u>
+                <Box h={4} />
+                <Text textStyle={'content'} textAlign={'center'}>
+                    You can learn all about me at{' '}
+                    <Clickable onClick={openPersonalWebsite} as='span' textStyle='content' textDecoration='underline'>
+                        LukeNeedham.com
+                    </Clickable>
                 </Text>
             </Flex>
             <Box h={16} />

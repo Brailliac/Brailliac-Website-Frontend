@@ -1,6 +1,6 @@
 import React from "react";
 import {Box, Circle, HStack} from "@chakra-ui/react";
-import {useClickable} from "@chakra-ui/clickable";
+import {Clickable} from "../../../../../common/Clickable";
 
 export const PagerIndicator = React.memo(pagerIndicator)
 
@@ -18,21 +18,20 @@ function pagerIndicator(props: Props): JSX.Element {
 
     const indicators = [...new Array(numPages)].map((_, i) => {
         const opacity = i === currentPageIndex ? 1 : 0.2
-        const clickable = useClickable({onClick: onClick})
 
         function onClick() {
             onIndicatorClick(i)
         }
 
         return (
-            <Box {...clickable} padding={1} key={i}>
+            <Clickable onClick={onClick} padding={1} key={i}>
                 <Circle
                     w={indicatorSize}
                     h={indicatorSize}
                     bgColor={color}
                     opacity={opacity}
                 />
-            </Box>
+            </Clickable>
         )
     })
 

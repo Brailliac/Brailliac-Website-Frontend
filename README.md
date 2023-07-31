@@ -1,13 +1,19 @@
 # About
 
-This is the Front-end project for the Brailliac website, which is deployed at: [brailliac.com](https://brailliac.com)
+This is the Front-end project for the Brailliac website
+It is hosted at [Brailliac.com](https://brailliac.com).
 
-# Stack
+It is a Next.js project using React, Typescript, and Chakra UI.
 
-This project uses React, Chakra UI, and NextJS.
 It was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Deploy
+
+This project is deployed on Netlify.
+It will auto-build and deploy whenever the 'main' branch updates.
+Therefore do not push to 'main' with every update, but only when you want to re-deploy.
+
+# Running
 
 First, run the development server:
 

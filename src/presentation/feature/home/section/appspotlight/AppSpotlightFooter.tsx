@@ -1,6 +1,6 @@
 import React from "react";
 import {Box, Flex, Text} from "@chakra-ui/react";
-import {useClickable} from "@chakra-ui/clickable";
+import {Clickable} from "../../../../common/Clickable";
 
 export const AppSpotlightFooter = React.memo(appSpotlightFooter)
 
@@ -11,11 +11,9 @@ interface Props {
 function appSpotlightFooter(props: Props): JSX.Element {
     const {onDownloadClick} = props;
 
-    const clickable = useClickable({onClick: onDownloadClick})
-
     return (
         <Box padding={2}>
-            <Box
+            <Clickable
                 borderColor={'white'}
                 borderWidth={2}
                 borderRadius={'5px'}
@@ -23,7 +21,7 @@ function appSpotlightFooter(props: Props): JSX.Element {
                 _hover={{
                     background: '#00000033',
                 }}
-                {...clickable}
+                onClick={onDownloadClick}
             >
                 <Flex direction={'column'}>
                     <Text textAlign={'center'} textColor={'white'} textStyle={'h3'}>
@@ -33,7 +31,7 @@ function appSpotlightFooter(props: Props): JSX.Element {
                         Free on all Android devices
                     </Text>
                 </Flex>
-            </Box>
+            </Clickable>
         </Box>
     )
 }
