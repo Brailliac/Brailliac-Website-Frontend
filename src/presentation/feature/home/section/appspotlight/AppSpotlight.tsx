@@ -25,7 +25,7 @@ function appSpotlight(props: Props): JSX.Element {
                 onDownloadClick={onDownloadClick}
             />
             <Box paddingX={1}>
-                <AppSpotlightBody detailPages={app.detailPages} accentColor={accentColor} onDownloadClick={onDownloadClick} />
+                <AppSpotlightBody detailPages={app.detailPages} accentColor={accentColor} />
             </Box>
             <Box h={1}/>
         </Flex>
