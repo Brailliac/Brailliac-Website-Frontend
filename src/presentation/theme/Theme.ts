@@ -36,6 +36,12 @@ const textStyles = {
         fontSize: {base: '18px', sm: '20px', md: '22px', lg: '28px'},
         lineHeight: {base: '22px', sm: '24px', md: '26px', lg: '34px'},
     },
+    fine: {
+        fontFamily: 'Roboto',
+        fontWeight: 300,
+        fontSize: {base: '14px', sm: '16px', md: '20px', lg: '22px'},
+        lineHeight: {base: '16px', sm: '18px', md: '22px', lg: '24px'},
+    },
 }
 
 export const theme = extendTheme(

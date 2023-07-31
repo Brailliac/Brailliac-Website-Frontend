@@ -15,6 +15,7 @@ function indexPage(): JSX.Element {
 
     const appSpotlights = apps.map(it => (
         <AppSpotlight
+            id={it.anchor}
             key={it.name}
             app={it}
             onDownloadClick={() => onDownloadClick(it)}
@@ -33,10 +34,10 @@ function indexPage(): JSX.Element {
 
     return (
         <Flex direction={'column'}>
-            <Center paddingX={{base: 5, md: 8, lg: 12}} marginTop={12}>
+            <Center paddingX={{base: 5, md: 8, lg: 12}} marginTop={16}>
                 <HeroGraphic />
             </Center>
-            <Text textAlign={'center'} marginTop={{base: 14, md: 16}} textStyle={'content'}>
+            <Text textAlign={'center'} marginTop={{base: 14, md: 16}} textStyle={'fine'}>
                 Scroll to see how...
             </Text>
             <Center marginTop={-2} opacity={0.4}>
@@ -44,10 +45,10 @@ function indexPage(): JSX.Element {
                     <ChevronIcon />
                 </Box>
             </Center>
-            <VStack spacing={{base: 10, md: 20}} paddingX={{base: 4, md: 8, lg: 14}} marginTop={24}>
+            <VStack spacing={{base: 20, md: 40}} paddingX={{base: 4, md: 8, lg: 14}} marginTop={24}>
                 {appSpotlights}
             </VStack>
-            <Box h={20} />
+            <Box h={40} />
             <Flex direction={'column'} paddingX={{base: 3, md: 10}}>
                 <Text textStyle={'content'} textAlign={'center'}>
                     Brailliac was created by Luke Needham,
@@ -61,7 +62,7 @@ function indexPage(): JSX.Element {
                     </Clickable>
                 </Text>
             </Flex>
-            <Box h={16} />
+            <Box h={40} />
         </Flex>
     )
 }

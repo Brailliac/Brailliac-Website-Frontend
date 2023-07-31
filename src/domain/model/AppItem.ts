@@ -7,4 +7,6 @@ export interface AppItem {
     logoSrc: string
     detailPages: AppItemDetailPage[]
     playStoreUrl: string
+    /** Anchor used for navigation within the same page */
+    anchor: string
 }

@@ -15,7 +15,7 @@ function appSpotlightDetailPage(props: Props): JSX.Element {
     const title = page.title
     const imageAlt = `Screenshot of the ${title} feature in the app`
 
-    const imageHeight = {base: '264px', sm: '280px', md: '296px', lg: '320px'}
+    const imageHeight = {base: '300px', md: '350px', lg: '400px', xl: '500px'}
 
     const elevation = '2px'
     const containerShadow = `0px ${elevation} ${elevation} rgba(0, 0, 0, 0.25)`

@@ -52,6 +52,7 @@ function appSpotlightBody(props: Props): JSX.Element {
     return (
         <Flex
             bgColor={'appSpotlightBody'}
+            borderBottomRadius={'5px'}
             paddingTop={{base: 5, md: 8}}
             paddingBottom={{base: 3, md: 5}}
             direction={'column'}
