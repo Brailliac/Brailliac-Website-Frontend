@@ -1,5 +1,7 @@
-import {AppItem} from "../../model/AppItem";
-import {AppItemDetailPage} from "../../model/AppItemDetailPage";
+import {AppItem} from "../../model/appitem/AppItem";
+import {AppItemDetailPage} from "../../model/appitem/AppItemDetailPage";
+import { AppItemDownloadSource } from "../../model/appitem/AppItemDownloadSource";
+import { Store } from "../../model/Store";
 
 const detailPage1: AppItemDetailPage = {
     title: 'Braille Input',
@@ -25,14 +27,19 @@ const detailPage4: AppItemDetailPage = {
     imageSrc: 'image/detail_page_braille_keyboard_4.png',
 }
 
+const storePlay: AppItemDownloadSource = {
+    url: 'https://play.google.com/store/apps/details?id=com.lukeneedham.braillekeyboard',
+    store: Store.Play,
+}
+
 const item: AppItem = {
-    name: 'Brailliac: Braille Keyboard',
+    name: 'Braille Keyboard',
     description: 'Practise Braille while typing!',
     accentColor: 'logo3',
     logoSrc: 'image/logo_braille_keyboard.webp',
     detailPages: [detailPage1, detailPage2, detailPage3, detailPage4],
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lukeneedham.braillekeyboard',
-    anchor: 'braille-keyboard'
+    downloadSources: [storePlay],
+    anchor: 'braille-keyboard',
 }
 
 export function getBrailleKeyboardAppItem() {

@@ -1,4 +1,5 @@
 import {AppItemDetailPage} from "./AppItemDetailPage";
+import { AppItemDownloadSource } from "./AppItemDownloadSource";
 
 export interface AppItem {
     name: string
@@ -6,7 +7,7 @@ export interface AppItem {
     accentColor: string
     logoSrc: string
     detailPages: AppItemDetailPage[]
-    playStoreUrl: string
+    downloadSources: AppItemDownloadSource[]
     /** Anchor used for navigation within the same page */
     anchor: string
 }

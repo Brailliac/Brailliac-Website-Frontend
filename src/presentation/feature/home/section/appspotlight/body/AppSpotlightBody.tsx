@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Box, Center, Flex, useBreakpointValue} from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {AppItemDetailPage} from "../../../../../../domain/model/AppItemDetailPage";
+import {AppItemDetailPage} from "../../../../../../domain/model/appitem/AppItemDetailPage";
 import {AppSpotlightDetailPage} from "./AppSpotlightDetailPage";
 import {PagerIndicator} from "./PagerIndicator";
 import {Swiper as SwiperClass} from "swiper/types";

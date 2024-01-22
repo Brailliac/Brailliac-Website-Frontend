@@ -2,11 +2,12 @@ import React from "react";
 import {Box, Center, Flex, Text, VStack} from "@chakra-ui/react";
 import {HeroGraphic} from "./section/herographic/HeroGraphic";
 import {AppSpotlight} from "./section/appspotlight/AppSpotlight";
-import {AppItem} from "../../../domain/model/AppItem";
+import {AppItem} from "../../../domain/model/appitem/AppItem";
 import {getAppItems} from "../../../domain/content/appitem/getAppItems";
 import {openInNewTab} from "../../util/Window";
 import {ChevronIcon} from "../../common/icon/ChevronIcon";
 import {Clickable} from "../../common/Clickable";
+import {AppItemDownloadSource} from "../../../domain/model/appitem/AppItemDownloadSource";
 
 export const IndexPage = React.memo(indexPage)
 
@@ -18,12 +19,12 @@ function indexPage(): JSX.Element {
             id={it.anchor}
             key={it.name}
             app={it}
-            onDownloadClick={() => onDownloadClick(it)}
+            onDownloadClick={onDownloadClick}
         />
     ))
 
-    function onDownloadClick(app: AppItem) {
-        const link = app.playStoreUrl
+    function onDownloadClick(source: AppItemDownloadSource) {
+        const link = source.url
         openInNewTab(link)
     }
 

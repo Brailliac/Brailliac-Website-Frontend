@@ -14,7 +14,7 @@ interface Props {
 function pagerIndicator(props: Props): JSX.Element {
     const {numPages, currentPageIndex, color, onIndicatorClick} = props
 
-    const indicatorSize = 4
+    const indicatorSize = 5
 
     const indicators = [...new Array(numPages)].map((_, i) => {
         const opacity = i === currentPageIndex ? 1 : 0.2

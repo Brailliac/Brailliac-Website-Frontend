@@ -1,5 +1,7 @@
-import {AppItem} from "../../model/AppItem";
-import {AppItemDetailPage} from "../../model/AppItemDetailPage";
+import {AppItem} from "../../model/appitem/AppItem";
+import {AppItemDetailPage} from "../../model/appitem/AppItemDetailPage";
+import {AppItemDownloadSource} from "../../model/appitem/AppItemDownloadSource";
+import { Store } from "../../model/Store";
 
 const detailPage1: AppItemDetailPage = {
     title: 'Dictionary',
@@ -31,13 +33,18 @@ const detailPage5: AppItemDetailPage = {
     imageSrc: 'image/detail_page_braille_tutor_5.png',
 }
 
+const storePlay: AppItemDownloadSource = {
+    url: 'https://play.google.com/store/apps/details?id=com.lukeneedham.brailletutor',
+    store: Store.Play,
+}
+
 const item: AppItem = {
-    name: 'Brailliac: Braille Tutor',
+    name: 'Braille Tutor',
     description: 'Everything you need to learn Braille!',
     accentColor: 'logo1',
     logoSrc: 'image/logo_braille_tutor.webp',
     detailPages: [detailPage1, detailPage2, detailPage3, detailPage4, detailPage5],
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lukeneedham.brailletutor',
+    downloadSources: [storePlay],
     anchor: 'braille-tutor',
 }
 

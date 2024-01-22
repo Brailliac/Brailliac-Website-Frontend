@@ -1,5 +1,5 @@
 import React from "react";
-import {AppItemDetailPage} from "../../../../../../domain/model/AppItemDetailPage";
+import {AppItemDetailPage} from "../../../../../../domain/model/appitem/AppItemDetailPage";
 import {Box, Flex, Spacer, Text} from "@chakra-ui/react";
 import {Image} from "@chakra-ui/image";
 
