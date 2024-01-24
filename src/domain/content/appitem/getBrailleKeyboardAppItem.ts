@@ -32,13 +32,18 @@ const storePlay: AppItemDownloadSource = {
     store: Store.Play,
 }
 
+const storeFdroid: AppItemDownloadSource = {
+    url: 'https://f-droid.org/en/packages/com.lukeneedham.braillekeyboard',
+    store: Store.Fdroid,
+}
+
 const item: AppItem = {
     name: 'Braille Keyboard',
     description: 'Practise Braille while typing!',
     accentColor: 'logo3',
     logoSrc: 'image/logo_braille_keyboard.webp',
     detailPages: [detailPage1, detailPage2, detailPage3, detailPage4],
-    downloadSources: [storePlay],
+    downloadSources: [storePlay, storeFdroid],
     anchor: 'braille-keyboard',
 }
 
