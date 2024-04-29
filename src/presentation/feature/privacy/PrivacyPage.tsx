@@ -35,17 +35,17 @@ function privacyPage(): JSX.Element {
 
             <Box h={10} />
             <Text textStyle={'h2'}>
-                What data does Braille Keyboard collect?
+                What data do Braille Tutor and Braille Keyboard collect?
             </Text>
             <Box h={3} />
             <Text textStyle={'h3'}>
                 <b>Nothing!</b> 
                 <br/>
-                Brailliac: Braille Keyboard does <b>not</b> collect, store, or transmit any data.
+                Brailliac apps do <b>not</b> collect, store, or transmit any data.
                 <br/>
-                It does <b>not</b> include any advertising or analytics software. 
+                They do <b>not</b> include any advertising or analytics software.
                 <br/>
-                It does <b>not</b> send any data to third parties.
+                They do <b>not</b> send any data to third parties.
             </Text>
 
             <Box h={10} />
@@ -69,6 +69,7 @@ function privacyPage(): JSX.Element {
             <Text textStyle={'h3'}>
                 If you have any questions or concerns, please feel free to contact Brailliac via brailliac@gmail.com
             </Text>
+            <Box h={3} />
         </Flex>
     )
 }
